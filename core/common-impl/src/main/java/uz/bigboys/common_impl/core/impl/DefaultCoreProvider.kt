@@ -16,4 +16,3 @@ class DefaultCoreProvider(
       logger, commonUi, resources, appRestarter, globalScope
    )
 ) : CoreProvider
-//chain
