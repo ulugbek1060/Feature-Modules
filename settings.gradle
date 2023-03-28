@@ -16,3 +16,4 @@ rootProject.name = "MultoModuleWithFeatures"
 include ':app'
 include ':core:common'
 include ':core:common-impl'
+include ':navigation'
