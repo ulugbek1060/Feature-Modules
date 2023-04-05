@@ -17,5 +17,6 @@ include ':app',
         ':core:common',
         ':core:common-impl',
         ':navigation',
-        ':core:presentation'
-include ':core:theme'
+        ':core:presentation',
+        ':core:theme',
+        ':data'
