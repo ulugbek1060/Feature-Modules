@@ -46,6 +46,7 @@ dependencies {
 
     implementation project(Modules.Core.Common)
     implementation project(Modules.Core.CommonImpl)
+    implementation project(Modules.Core.Theme)
     implementation project(Modules.Navigation)
 
     implementation Libs.Google.Hilt
