@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <FrameLayout
+            android:id="@+id/cartIconContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/cartImageView"
+                style="@style/ClickableIcon"
+                android:src="@drawable/core_theme_ic_cart"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/cartCounterTextView"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/cart_counter_background"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage"
+                tools:text="8" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:lines="1"
+            tools:text=" &#64;username" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        tools:layout="@layout/fragment_tabs" />
+
+</LinearLayout>
