@@ -20,3 +20,4 @@ include ':app',
         ':core:presentation',
         ':core:theme',
         ':data'
+include ':feature:sign-in'

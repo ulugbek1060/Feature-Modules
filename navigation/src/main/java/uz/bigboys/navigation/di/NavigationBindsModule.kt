@@ -21,12 +21,4 @@ interface NavigationBindsModule {
    ): AppRestarter
 
 
-   @Provides
-   @IntoSet
-   fun provideRouterAsActivityRequired(
-      router: GlobalNavComponentRouter,
-   ): ActivityRequired {
-      return router
-   }
-
 }

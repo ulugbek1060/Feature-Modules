@@ -1,22 +1,19 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'com.google.dagger.hilt.android'
 }
 
 android {
-    namespace 'uz.bigboys.multomodulewithfeatures'
+    namespace 'uz.bigboys.sign_in'
     compileSdk 33
 
     defaultConfig {
-        applicationId "uz.bigboys.multomodulewithfeatures"
         minSdk 24
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -32,28 +29,21 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    viewBinding.enabled = true
 }
 
 dependencies {
-
     implementation Libs.Android.CoreKtx
     implementation Libs.Android.AppCompat
-    implementation Libs.Android.ConstraintLayout
-    implementation Libs.Android.NavigationFragments
+    implementation Libs.Android.FragmentKtx
+    implementation Libs.Android.LifecycleViewModelKtx
 
     implementation Libs.Google.Material
 
     implementation Libs.Google.Hilt
     kapt Libs.Google.HiltCompiler
 
-    implementation project(Modules.Core.CommonImpl)
     implementation project(Modules.Core.Presentation)
-    implementation project(Modules.Data)
-    implementation project(Modules.Navigation)
-    implementation project(Modules.Features.SignIn)
-//    implementation project(Modules.Features.SignUp)
-//    implementation project(Modules.Features.Profile)
-//    implementation project(Modules.Features.Cart)
-//    implementation project(Modules.Features.Orders)
-//    implementation project(Modules.Features.Catalog)
+    implementation project(Modules.Core.Theme)
 }

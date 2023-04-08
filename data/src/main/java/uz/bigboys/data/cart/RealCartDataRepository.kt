@@ -6,6 +6,7 @@ import kotlinx.coroutines.launch
 import uz.bigboys.common.Container
 import uz.bigboys.common.NotFoundException
 import uz.bigboys.common.flow.DefaultLazyFlowSubjectFactory
+import uz.bigboys.common.flow.LazyFlowSubjectFactory
 import uz.bigboys.data.CartDataRepository
 import uz.bigboys.data.cart.entity.CartItemDataEntity
 import uz.bigboys.data.cart.source.CartDataSource
@@ -16,7 +17,7 @@ class RealCartDataRepository @Inject constructor(
    private val cartSource: CartDataSource,
    private val settingsDataSource: SettingsDataSource,
    scope: CoroutineScope,
-   lazyFlowSubjectFactory: DefaultLazyFlowSubjectFactory
+   lazyFlowSubjectFactory: LazyFlowSubjectFactory
 ) : CartDataRepository {
 
 

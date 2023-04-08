@@ -1,4 +1,6 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+
+
 buildscript {
     ext {
 
@@ -50,16 +52,17 @@ buildscript {
                         Theme: ":core:theme",
                 ],
                 Features: [
-                        SignIn: ":features:sign-in",
-                        SignUp: ":features:sign-up",
-                        Cart: ":features:cart",
-                        Orders: ":features:orders",
-                        Catalog: ":features:catalog",
-                        Profile: ":features:profile"
+                        SignIn: ":feature:sign-in",
+                        SignUp: ":feature:sign-up",
+                        Cart: ":feature:cart",
+                        Orders: ":feature:orders",
+                        Catalog: ":feature:catalog",
+                        Profile: ":feature:profile"
                 ],
         ]
     }
 }
+
 
 plugins {
     id 'com.android.application' version '7.4.0' apply false
