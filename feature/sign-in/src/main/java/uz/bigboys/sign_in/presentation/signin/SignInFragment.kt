@@ -6,11 +6,13 @@ import androidx.core.view.isInvisible
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import dagger.hilt.android.AndroidEntryPoint
 import uz.bigboys.presentation.viewBinding
 import uz.bigboys.presentation.views.observe
 import uz.bigboys.sign_in.R
 import uz.bigboys.sign_in.databinding.FragmentSignInBinding
 
+@AndroidEntryPoint
 class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
    private val binding by viewBinding<FragmentSignInBinding>()

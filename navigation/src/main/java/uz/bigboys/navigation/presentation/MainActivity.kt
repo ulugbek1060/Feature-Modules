@@ -2,7 +2,6 @@ package uz.bigboys.navigation.presentation
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -37,15 +36,10 @@ class MainActivity : AppCompatActivity(), RouterHolder {
       navComponentRouterFactory.create(R.id.fragmentContainer)
    }
 
-   override fun requireRouter(): NavComponentRouter {
-      return navComponentRouter
-   }
-
-   override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-      super.onCreate(savedInstanceState, persistentState)
+   override fun onCreate(savedInstanceState: Bundle?) {
+      super.onCreate(savedInstanceState)
       setContentView(binding.root)
       setSupportActionBar(binding.toolbar)
-
       if (savedInstanceState != null) {
          navComponentRouter.onRestoreInstanceState(savedInstanceState)
       }
@@ -55,7 +49,6 @@ class MainActivity : AppCompatActivity(), RouterHolder {
       }
 
       navComponentRouter.onCreate()
-
       if (savedInstanceState == null) {
          navComponentRouter.switchToStack(destinationsProvider.provideStartDestinationId())
       }
@@ -64,7 +57,6 @@ class MainActivity : AppCompatActivity(), RouterHolder {
          observeCart()
          setupListeners()
       }
-
       activityRequiredSet.forEach {
          it.onCreated(this)
       }
@@ -76,7 +68,7 @@ class MainActivity : AppCompatActivity(), RouterHolder {
 
    override fun onSaveInstanceState(outState: Bundle) {
       super.onSaveInstanceState(outState)
-      navComponentRouter.onSavedInstanceState(outState)
+      navComponentRouter.onSaveInstanceState(outState)
    }
 
    override fun onStart() {
@@ -93,6 +85,10 @@ class MainActivity : AppCompatActivity(), RouterHolder {
       super.onDestroy()
       navComponentRouter.onDestroy()
       activityRequiredSet.forEach { it.onDestroyed() }
+   }
+
+   override fun requireRouter(): NavComponentRouter {
+      return navComponentRouter
    }
 
    @SuppressLint("SetTextI18n")

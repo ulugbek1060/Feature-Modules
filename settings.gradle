@@ -19,5 +19,8 @@ include ':app',
         ':navigation',
         ':core:presentation',
         ':core:theme',
-        ':data'
-include ':feature:sign-in'
+        ':data',
+        ':feature:sign-in',
+        ':feature:sign-up',
+        ':feature:profile'
+include ':feature:orders'

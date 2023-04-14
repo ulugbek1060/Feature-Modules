@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="MultoModuleWithFeatures.common.presentation" target="11" />
+      <module name="MultoModuleWithFeatures.core.orders" target="17" />
       <module name="MultoModuleWithFeatures.wiring" target="11" />
     </bytecodeTargetLevel>
   </component>

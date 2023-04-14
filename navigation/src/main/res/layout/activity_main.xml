@@ -38,6 +38,7 @@
                 android:textStyle="bold"
                 tools:ignore="SpUsage"
                 tools:text="8" />
+
         </FrameLayout>
 
         <TextView

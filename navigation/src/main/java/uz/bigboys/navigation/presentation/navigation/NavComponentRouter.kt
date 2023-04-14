@@ -21,6 +21,9 @@ import uz.bigboys.navigation.presentation.TabsFragment
 import uz.bigboys.presentation.ARG_SCREEN
 import java.util.regex.Pattern
 
+/**
+ * Stack and tabs navigation based on Navigation Component library
+ */
 class NavComponentRouter @AssistedInject constructor(
    @Assisted @IdRes private val fragmentContainerId: Int,
    private val destinationsProvider: DestinationsProvider,
@@ -28,7 +31,7 @@ class NavComponentRouter @AssistedInject constructor(
    private val activity: FragmentActivity,
 ) {
 
-   private var currentStartDestination: Int = 0
+   private var currentStartDestination = 0
    private var navController: NavController? = null
    private var fragmentDialogs: Int = 0
 
@@ -77,7 +80,7 @@ class NavComponentRouter @AssistedInject constructor(
       return true
    }
 
-   fun onSavedInstanceState(bundle: Bundle) {
+   fun onSaveInstanceState(bundle: Bundle) {
       bundle.putInt(KEY_START_DESTINATION, currentStartDestination)
       bundle.putSerializable(KEY_NAV_MODE, navigationModeHolder.navigationMode)
    }
@@ -227,5 +230,4 @@ class NavComponentRouter @AssistedInject constructor(
       const val KEY_START_DESTINATION = "startDestination"
       const val KEY_NAV_MODE = "navMode"
    }
-
 }

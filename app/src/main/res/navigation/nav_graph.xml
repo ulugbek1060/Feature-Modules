@@ -8,7 +8,25 @@
     <fragment
         android:id="@+id/signInFragment"
         android:name="uz.bigboys.sign_in.presentation.signin.SignInFragment"
-        tools:layout="@layout/fragment_sign_in"
-        android:label="SignInFragment" />
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in" />
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="uz.bigboys.sign_up.presentation.signup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.profile.presentation.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.profile.presentation.edit.EditProfileFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" />
 
 </navigation>
