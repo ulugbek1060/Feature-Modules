@@ -54,6 +54,6 @@ dependencies {
     implementation project(Modules.Features.SignUp)
     implementation project(Modules.Features.Profile)
 //    implementation project(Modules.Features.Cart)
-//    implementation project(Modules.Features.Orders)
+    implementation project(Modules.Features.Orders)
 //    implementation project(Modules.Features.Catalog)
 }
