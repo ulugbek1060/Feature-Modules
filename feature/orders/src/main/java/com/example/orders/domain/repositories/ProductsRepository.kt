@@ -5,6 +5,6 @@ interface ProductsRepository {
     /**
      * Change quantity of the specified product.
      */
-    suspend fun changeQuantity(productId: Long, byValue: Int)
+    suspend fun changeQuantityBy(productId: Long, byValue: Int)
 
 }

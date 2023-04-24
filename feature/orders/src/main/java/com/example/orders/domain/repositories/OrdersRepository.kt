@@ -17,16 +17,17 @@ interface OrdersRepository {
     /**
      * Change status of the specified order.
      */
-    suspend fun changeStatus(orderUUid: String, orderStatus: OrderStatus)
+    suspend fun changeStatus(orderUuid: String, status: OrderStatus)
 
     /**
      * Listen for order list.
-     * @returns infinite flow, always success; errors are delivered to [Container]
+     * @return infinite flow, always success; errors are delivered to [Container]
      */
-    suspend fun getOrders(): Flow<Container<List<Order>>>
+    fun getOrders(): Flow<Container<List<Order>>>
 
     /**
      * Reload orders flow returned by [getOrders]
      */
     fun reload()
+
 }

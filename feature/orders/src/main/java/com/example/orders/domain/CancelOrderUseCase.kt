@@ -21,7 +21,7 @@ class CancelOrderUseCase @Inject constructor(
         ordersRepository.changeStatus(order.uuid, OrderStatus.CANCELLED)
     }
 
-    private fun canCancel(order: Order): Boolean {
+     fun canCancel(order: Order): Boolean {
         return order.status == OrderStatus.CREATED
                 || order.status == OrderStatus.ACCEPTED
     }
