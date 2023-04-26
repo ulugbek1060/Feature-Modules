@@ -18,10 +18,12 @@ import com.example.orders.databinding.ItemOrderBinding
 import com.example.orders.databinding.ItemOrderProductBinding
 import com.example.orders.domain.entities.OrderItem
 import com.example.orders.domain.entities.OrderStatus
+import dagger.hilt.android.AndroidEntryPoint
 import uz.bigboys.presentation.viewBinding
 import uz.bigboys.presentation.views.observe
 import uz.bigboys.presentation.views.setupSimpleList
 
+@AndroidEntryPoint
 class OrdersListFragment : Fragment(R.layout.fragment_orders_list) {
 
 
