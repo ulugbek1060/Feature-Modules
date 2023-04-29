@@ -6,11 +6,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.catalog'
-    compileSdk 33
+    namespace 'ua.cn.stu.multimodule.catalog'
+    compileSdk targetAndroidSdk
 
     defaultConfig {
-        minSdk 24
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -29,8 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    viewBinding.enabled = true
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -47,4 +49,5 @@ dependencies {
     kapt Libs.Google.HiltCompiler
 
     implementation project(Modules.Core.Presentation)
+    implementation project(Modules.Core.Theme)
 }

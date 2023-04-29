@@ -19,6 +19,7 @@ import uz.bigboys.presentation.live.MutableLiveValue
 /**
  * Base class for all view models.
  */
+@OptIn(FlowPreview::class)
 open class BaseViewModel : ViewModel() {
 
    /**

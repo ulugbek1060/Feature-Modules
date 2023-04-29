@@ -5,8 +5,8 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import uz.bigboys.data.products.sources.DiscountsDataSource
-import uz.bigboys.data.products.sources.InMemoryDiscountsDataSource
 import uz.bigboys.data.products.sources.InMemoryProductsDataSource
+import uz.bigboys.data.products.sources.InMemoryDiscountDataSource
 import uz.bigboys.data.products.sources.ProductsDataSource
 import javax.inject.Singleton
 
@@ -23,7 +23,7 @@ interface ProductSourcesModule {
     @Binds
     @Singleton
     fun bindDiscountsSource(
-        discountsDataSource: InMemoryDiscountsDataSource
+        discountsDataSource: InMemoryDiscountDataSource
     ): DiscountsDataSource
 
 }

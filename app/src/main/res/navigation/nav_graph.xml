@@ -32,5 +32,21 @@
         android:id="@+id/ordersListFragment"
         android:name="com.example.orders.presentation.orders.OrdersListFragment"
         android:label="OrdersListFragment" />
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.catalog.presentation.catalog.CatalogFragment"
+        android:label="CatalogFragment" />
+    <fragment
+        android:id="@+id/catalogFilterFragment"
+        android:name="com.example.catalog.presentation.filter.CatalogFilterFragment"
+        android:label="CatalogFilterFragment" />
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.catalog.presentation.details.ProductDetailsFragment"
+        android:label="ProductDetailsFragment" />
+    <fragment
+        android:id="@+id/createOrderFragment"
+        android:name="com.example.orders.presentation.create.CreateOrderFragment"
+        android:label="CreateOrderFragment" />
 
 </navigation>
