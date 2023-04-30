@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog.mappers
 
-import com.example.catalog.domain.entities.SortBy
+import uz.bigboys.catalog.domain.entities.SortBy
 import uz.bigboys.data.products.entities.SortByDataValue
 import javax.inject.Inject
 

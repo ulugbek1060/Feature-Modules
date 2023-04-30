@@ -1,7 +1,7 @@
 package uz.bigboys.multomodulewithfeatures.glue.profile.di
 
-import com.example.profile.domain.repositories.AuthTokenRepository
-import com.example.profile.domain.repositories.ProfileRepository
+import uz.bigboys.profile.domain.repositories.AuthTokenRepository
+import uz.bigboys.profile.domain.repositories.ProfileRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

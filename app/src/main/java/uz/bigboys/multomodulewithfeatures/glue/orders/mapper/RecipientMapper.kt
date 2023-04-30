@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.mapper
 
-import com.example.orders.domain.entities.Recipient
+import uz.bigboys.orders.domain.entities.Recipient
 import uz.bigboys.data.orders.entity.RecipientDataEntity
 import javax.inject.Inject
 

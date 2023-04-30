@@ -1,8 +1,8 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog.repositories
 
-import com.example.catalog.domain.repositories.CartRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import uz.bigboys.catalog.domain.repositories.CartRepository
 import uz.bigboys.common.Container
 import uz.bigboys.data.CartDataRepository
 import javax.inject.Inject

@@ -1,9 +1,9 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.repositories
 
-import com.example.orders.domain.entities.Cart
-import com.example.orders.domain.entities.CartItem
-import com.example.orders.domain.factories.PriceFactory
-import com.example.orders.domain.repositories.CartRepository
+import uz.bigboys.orders.domain.entities.Cart
+import uz.bigboys.orders.domain.entities.CartItem
+import uz.bigboys.orders.domain.factories.PriceFactory
+import uz.bigboys.orders.domain.repositories.CartRepository
 import uz.bigboys.common.unwrapFirst
 import uz.bigboys.data.CartDataRepository
 import uz.bigboys.data.ProductsDataRepository

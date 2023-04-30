@@ -1,11 +1,11 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog.repositories
 
-import com.example.catalog.domain.entities.Price
-import com.example.catalog.domain.entities.Product
-import com.example.catalog.domain.entities.ProductFilter
-import com.example.catalog.domain.repositories.ProductsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import uz.bigboys.catalog.domain.entities.Price
+import uz.bigboys.catalog.domain.entities.Product
+import uz.bigboys.catalog.domain.entities.ProductFilter
+import uz.bigboys.catalog.domain.repositories.ProductsRepository
 import uz.bigboys.common.Container
 import uz.bigboys.data.ProductsDataRepository
 import uz.bigboys.multomodulewithfeatures.fromatter.PriceFormatter

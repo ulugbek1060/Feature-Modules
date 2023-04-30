@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.mapper
 
-import com.example.orders.domain.entities.OrderStatus
+import uz.bigboys.orders.domain.entities.OrderStatus
 import uz.bigboys.data.orders.entity.OrderStatusDataValue
 import javax.inject.Inject
 

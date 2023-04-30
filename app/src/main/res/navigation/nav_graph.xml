@@ -19,34 +19,34 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.profile.presentation.profile.ProfileFragment"
+        android:name="uz.bigboys.profile.presentation.profile.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/editProfileFragment"
-        android:name="com.example.profile.presentation.edit.EditProfileFragment"
+        android:name="uz.bigboys.profile.presentation.edit.EditProfileFragment"
         android:label="EditProfileFragment"
         tools:layout="@layout/fragment_edit_profile" />
     <fragment
         android:id="@+id/ordersListFragment"
-        android:name="com.example.orders.presentation.orders.OrdersListFragment"
+        android:name="uz.bigboys.orders.presentation.orders.OrdersListFragment"
         android:label="OrdersListFragment" />
     <fragment
         android:id="@+id/catalogFragment"
-        android:name="com.example.catalog.presentation.catalog.CatalogFragment"
+        android:name="uz.bigboys.catalog.presentation.catalog.CatalogFragment"
         android:label="CatalogFragment" />
     <fragment
         android:id="@+id/catalogFilterFragment"
-        android:name="com.example.catalog.presentation.filter.CatalogFilterFragment"
+        android:name="uz.bigboys.catalog.presentation.filter.CatalogFilterFragment"
         android:label="CatalogFilterFragment" />
     <fragment
         android:id="@+id/productDetailsFragment"
-        android:name="com.example.catalog.presentation.details.ProductDetailsFragment"
+        android:name="uz.bigboys.catalog.presentation.details.ProductDetailsFragment"
         android:label="ProductDetailsFragment" />
     <fragment
         android:id="@+id/createOrderFragment"
-        android:name="com.example.orders.presentation.create.CreateOrderFragment"
+        android:name="uz.bigboys.orders.presentation.create.CreateOrderFragment"
         android:label="CreateOrderFragment" />
 
 </navigation>

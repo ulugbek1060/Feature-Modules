@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.profile.repositories
 
-import com.example.profile.domain.repositories.AuthTokenRepository
+import uz.bigboys.profile.domain.repositories.AuthTokenRepository
 import uz.bigboys.data.settings.SettingsDataSource
 import javax.inject.Inject
 

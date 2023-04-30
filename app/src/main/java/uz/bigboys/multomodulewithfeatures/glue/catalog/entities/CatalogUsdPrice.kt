@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog.entities
 
-import com.example.catalog.domain.entities.Price
+import uz.bigboys.catalog.domain.entities.Price
 import uz.bigboys.multomodulewithfeatures.fromatter.PriceFormatter
 
 data class CatalogUsdPrice(

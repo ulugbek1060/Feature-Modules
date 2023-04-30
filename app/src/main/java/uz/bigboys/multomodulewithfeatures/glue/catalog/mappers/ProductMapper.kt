@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog.mappers
 
-import com.example.catalog.domain.entities.Product
+import uz.bigboys.catalog.domain.entities.Product
 import uz.bigboys.data.ProductsDataRepository
 import uz.bigboys.data.products.entities.ProductDataEntity
 import uz.bigboys.multomodulewithfeatures.fromatter.PriceFormatter

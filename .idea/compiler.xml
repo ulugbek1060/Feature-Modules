@@ -2,8 +2,25 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
+      <module name="MultoModuleWithFeatures.app" target="17" />
+      <module name="MultoModuleWithFeatures.catalog" target="17" />
       <module name="MultoModuleWithFeatures.common.presentation" target="11" />
+      <module name="MultoModuleWithFeatures.core.common-impl" target="17" />
       <module name="MultoModuleWithFeatures.core.orders" target="17" />
+      <module name="MultoModuleWithFeatures.core.presentation" target="17" />
+      <module name="MultoModuleWithFeatures.core.theme" target="17" />
+      <module name="MultoModuleWithFeatures.data" target="17" />
+      <module name="MultoModuleWithFeatures.feature.catalog" target="17" />
+      <module name="MultoModuleWithFeatures.feature.orders" target="17" />
+      <module name="MultoModuleWithFeatures.feature.profile" target="17" />
+      <module name="MultoModuleWithFeatures.feature.sign-in" target="17" />
+      <module name="MultoModuleWithFeatures.feature.sign-up" target="17" />
+      <module name="MultoModuleWithFeatures.features.catalog" target="17" />
+      <module name="MultoModuleWithFeatures.features.orders" target="17" />
+      <module name="MultoModuleWithFeatures.features.profile" target="17" />
+      <module name="MultoModuleWithFeatures.features.sign-in" target="17" />
+      <module name="MultoModuleWithFeatures.features.sign-up" target="17" />
+      <module name="MultoModuleWithFeatures.navigation" target="17" />
       <module name="MultoModuleWithFeatures.wiring" target="11" />
     </bytecodeTargetLevel>
   </component>

@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.di
 
-import com.example.orders.presentation.OrdersRouter
+import uz.bigboys.orders.presentation.OrdersRouter
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

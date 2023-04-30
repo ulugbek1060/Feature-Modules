@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.di
 
-import com.example.orders.domain.factories.PriceFactory
+import uz.bigboys.orders.domain.factories.PriceFactory
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.repositories
 
-import com.example.orders.domain.repositories.ProductsRepository
+import uz.bigboys.orders.domain.repositories.ProductsRepository
 import uz.bigboys.data.ProductsDataRepository
 import javax.inject.Inject
 

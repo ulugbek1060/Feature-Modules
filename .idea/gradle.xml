@@ -18,12 +18,12 @@
             <option value="$PROJECT_DIR$/core/presentation" />
             <option value="$PROJECT_DIR$/core/theme" />
             <option value="$PROJECT_DIR$/data" />
-            <option value="$PROJECT_DIR$/feature" />
-            <option value="$PROJECT_DIR$/feature/catalog" />
-            <option value="$PROJECT_DIR$/feature/orders" />
-            <option value="$PROJECT_DIR$/feature/profile" />
-            <option value="$PROJECT_DIR$/feature/sign-in" />
-            <option value="$PROJECT_DIR$/feature/sign-up" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/catalog" />
+            <option value="$PROJECT_DIR$/features/orders" />
+            <option value="$PROJECT_DIR$/features/profile" />
+            <option value="$PROJECT_DIR$/features/sign-in" />
+            <option value="$PROJECT_DIR$/features/sign-up" />
             <option value="$PROJECT_DIR$/navigation" />
           </set>
         </option>

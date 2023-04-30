@@ -1,10 +1,10 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog
 
-import com.example.catalog.domain.entities.ProductFilter
-import com.example.catalog.presentation.CatalogFilterRouter
-import com.example.catalog.presentation.filter.CatalogFilterFragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
+import uz.bigboys.catalog.domain.entities.ProductFilter
+import uz.bigboys.catalog.presentation.CatalogFilterRouter
+import uz.bigboys.catalog.presentation.filter.CatalogFilterFragment
 import uz.bigboys.common.ScreenCommunication
 import uz.bigboys.common.listen
 import uz.bigboys.multomodulewithfeatures.R

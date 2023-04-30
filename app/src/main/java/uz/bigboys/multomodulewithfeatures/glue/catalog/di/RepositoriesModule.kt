@@ -1,11 +1,11 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog.di
 
-import com.example.catalog.domain.repositories.CartRepository
-import com.example.catalog.domain.repositories.ProductsRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import uz.bigboys.catalog.domain.repositories.CartRepository
+import uz.bigboys.catalog.domain.repositories.ProductsRepository
 import uz.bigboys.multomodulewithfeatures.glue.catalog.repositories.AdapterCartRepository
 import uz.bigboys.multomodulewithfeatures.glue.catalog.repositories.AdapterProductsRepository
 

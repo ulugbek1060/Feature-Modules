@@ -1,10 +1,10 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.repositories
 
-import com.example.orders.domain.entities.Cart
-import com.example.orders.domain.entities.Order
-import com.example.orders.domain.entities.OrderStatus
-import com.example.orders.domain.entities.Recipient
-import com.example.orders.domain.repositories.OrdersRepository
+import uz.bigboys.orders.domain.entities.Cart
+import uz.bigboys.orders.domain.entities.Order
+import uz.bigboys.orders.domain.entities.OrderStatus
+import uz.bigboys.orders.domain.entities.Recipient
+import uz.bigboys.orders.domain.repositories.OrdersRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import uz.bigboys.common.Container

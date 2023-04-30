@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders
 
-import com.example.orders.presentation.OrdersRouter
+import uz.bigboys.orders.presentation.OrdersRouter
 import uz.bigboys.multomodulewithfeatures.R
 import uz.bigboys.navigation.GlobalNavComponentRouter
 import javax.inject.Inject

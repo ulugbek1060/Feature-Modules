@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.entity
 
-import com.example.orders.domain.entities.Price
+import uz.bigboys.orders.domain.entities.Price
 import uz.bigboys.multomodulewithfeatures.fromatter.PriceFormatter
 
 class OrderUsdPrice(

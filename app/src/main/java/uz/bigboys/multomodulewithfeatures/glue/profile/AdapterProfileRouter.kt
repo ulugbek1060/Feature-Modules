@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.profile
 
-import com.example.profile.presentation.ProfileRouter
+import uz.bigboys.profile.presentation.ProfileRouter
 import uz.bigboys.multomodulewithfeatures.R
 import uz.bigboys.navigation.GlobalNavComponentRouter
 import javax.inject.Inject

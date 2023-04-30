@@ -7,12 +7,13 @@ plugins {
 
 android {
     namespace 'uz.bigboys.multomodulewithfeatures'
-    compileSdk 33
+    compileSdk targetAndroidSdk
 
     defaultConfig {
         applicationId "uz.bigboys.multomodulewithfeatures"
-        minSdk 24
-        targetSdk 33
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
+
         versionCode 1
         versionName "1.0"
 
@@ -50,9 +51,9 @@ dependencies {
     implementation project(Modules.Core.Presentation)
     implementation project(Modules.Data)
     implementation project(Modules.Navigation)
+    implementation project(Modules.Features.Catalog)
     implementation project(Modules.Features.SignIn)
     implementation project(Modules.Features.SignUp)
     implementation project(Modules.Features.Profile)
     implementation project(Modules.Features.Orders)
-    implementation project(Modules.Features.Catalog)
 }

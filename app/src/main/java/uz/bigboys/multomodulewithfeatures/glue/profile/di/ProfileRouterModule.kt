@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.profile.di
 
-import com.example.profile.presentation.ProfileRouter
+import uz.bigboys.profile.presentation.ProfileRouter
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

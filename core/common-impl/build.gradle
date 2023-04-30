@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace 'uz.bigboys.common_impl'
-    compileSdk 33
+    compileSdk targetAndroidSdk
 
     defaultConfig {
-        minSdk 24
-        targetSdk 33
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"

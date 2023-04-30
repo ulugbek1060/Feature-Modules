@@ -1,8 +1,8 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.di
 
-import com.example.orders.domain.repositories.CartRepository
-import com.example.orders.domain.repositories.OrdersRepository
-import com.example.orders.domain.repositories.ProductsRepository
+import uz.bigboys.orders.domain.repositories.CartRepository
+import uz.bigboys.orders.domain.repositories.OrdersRepository
+import uz.bigboys.orders.domain.repositories.ProductsRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

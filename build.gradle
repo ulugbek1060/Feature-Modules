@@ -1,6 +1,3 @@
-
-
-
 buildscript {
     ext {
 
@@ -11,53 +8,53 @@ buildscript {
         navVersion = "2.4.0"
 
         Libs = [
-                Android: [
-                        CoreKtx: "androidx.core:core-ktx:1.9.0",
-                        FragmentKtx: "androidx.fragment:fragment-ktx:1.5.5",
-                        ActivityKtx: "androidx.activity:activity-ktx:1.6.1",
-                        AppCompat: "androidx.appcompat:appcompat:1.6.0",
-                        LifecycleRuntimeKtx: "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1",
+                Android  : [
+                        CoreKtx              : "androidx.core:core-ktx:1.9.0",
+                        FragmentKtx          : "androidx.fragment:fragment-ktx:1.5.5",
+                        ActivityKtx          : "androidx.activity:activity-ktx:1.6.1",
+                        AppCompat            : "androidx.appcompat:appcompat:1.6.0",
+                        LifecycleRuntimeKtx  : "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1",
                         LifecycleViewModelKtx: "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1",
-                        ConstraintLayout: "androidx.constraintlayout:constraintlayout:2.1.4",
-                        RecyclerView: "androidx.recyclerview:recyclerview:1.2.1",
-                        NavigationFragments: "androidx.navigation:navigation-fragment-ktx:$navVersion",
-                        NavigationUI: "androidx.navigation:navigation-ui-ktx:$navVersion",
+                        ConstraintLayout     : "androidx.constraintlayout:constraintlayout:2.1.4",
+                        RecyclerView         : "androidx.recyclerview:recyclerview:1.2.1",
+                        NavigationFragments  : "androidx.navigation:navigation-fragment-ktx:$navVersion",
+                        NavigationUI         : "androidx.navigation:navigation-ui-ktx:$navVersion",
                 ],
-                Google: [
-                        Material: "com.google.android.material:material:1.7.0",
-                        Hilt: "com.google.dagger:hilt-android:$hiltVersion",
+                Google   : [
+                        Material    : "com.google.android.material:material:1.7.0",
+                        Hilt        : "com.google.dagger:hilt-android:$hiltVersion",
                         HiltCompiler: "com.google.dagger:hilt-compiler:$hiltVersion",
                 ],
                 JetBrains: [
                         CoroutinesCore: "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4",
                 ],
-                Testing: [
+                Testing  : [
                         JUnit: "junit:junit:4.13.2",
                 ],
-                Stuff: [
+                Stuff    : [
                         ElementAdapter: "com.elveum:element-adapter:0.6",
-                        Coil: "io.coil-kt:coil:2.2.0",
-                        Faker: "com.github.javafaker:javafaker:1.0.2",
+                        Coil          : "io.coil-kt:coil:2.2.0",
+                        Faker         : "com.github.javafaker:javafaker:1.0.2",
                 ],
         ]
 
         Modules = [
-                Wiring: ":wiring",
+                Wiring    : ":wiring",
                 Navigation: ":navigation",
-                Data: ":data",
-                Core: [
-                        Common: ":core:common",
-                        CommonImpl: ":core:common-impl",
+                Data      : ":data",
+                Core      : [
+                        Common      : ":core:common",
+                        CommonImpl  : ":core:common-impl",
                         Presentation: ":core:presentation",
-                        Theme: ":core:theme",
+                        Theme       : ":core:theme",
                 ],
-                Features: [
-                        SignIn: ":feature:sign-in",
-                        SignUp: ":feature:sign-up",
-                        Cart: ":feature:cart",
-                        Orders: ":feature:orders",
-                        Catalog: ":feature:catalog",
-                        Profile: ":feature:profile"
+                Features  : [
+                        SignIn : ":features:sign-in",
+                        SignUp : ":features:sign-up",
+                        Cart   : ":features:cart",
+                        Orders : ":features:orders",
+                        Catalog: ":features:catalog",
+                        Profile: ":features:profile"
                 ],
         ]
     }
@@ -65,8 +62,8 @@ buildscript {
 
 
 plugins {
-    id 'com.android.application' version '7.4.0' apply false
-    id 'com.android.library' version '7.4.0' apply false
+    id 'com.android.application' version '8.0.0' apply false
+    id 'com.android.library' version '8.0.0' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.21' apply false
     id 'org.jetbrains.kotlin.jvm' version '1.7.21' apply false
     id 'com.google.dagger.hilt.android' version "$hiltVersion" apply false

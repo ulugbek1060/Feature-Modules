@@ -1,7 +1,7 @@
 package uz.bigboys.multomodulewithfeatures.glue.orders.mapper
 
-import com.example.orders.domain.entities.Order
-import com.example.orders.domain.entities.OrderItem
+import uz.bigboys.orders.domain.entities.Order
+import uz.bigboys.orders.domain.entities.OrderItem
 import uz.bigboys.data.orders.entity.OrderDataEntity
 import uz.bigboys.data.orders.entity.RecipientDataEntity
 import uz.bigboys.multomodulewithfeatures.fromatter.DateTimeFormatter

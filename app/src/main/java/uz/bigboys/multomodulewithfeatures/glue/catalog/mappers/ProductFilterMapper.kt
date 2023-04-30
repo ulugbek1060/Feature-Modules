@@ -1,6 +1,6 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog.mappers
 
-import com.example.catalog.domain.entities.ProductFilter
+import uz.bigboys.catalog.domain.entities.ProductFilter
 import uz.bigboys.data.products.entities.ProductDataFilter
 import uz.bigboys.multomodulewithfeatures.glue.catalog.entities.CatalogUsdPrice
 import javax.inject.Inject

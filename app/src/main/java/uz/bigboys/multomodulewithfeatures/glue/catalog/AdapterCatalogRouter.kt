@@ -1,8 +1,8 @@
 package uz.bigboys.multomodulewithfeatures.glue.catalog
 
 
-import com.example.catalog.presentation.CatalogRouter
-import com.example.catalog.presentation.details.ProductDetailsFragment
+import uz.bigboys.catalog.presentation.CatalogRouter
+import uz.bigboys.catalog.presentation.details.ProductDetailsFragment
 import uz.bigboys.multomodulewithfeatures.R
 import uz.bigboys.navigation.GlobalNavComponentRouter
 import javax.inject.Inject
